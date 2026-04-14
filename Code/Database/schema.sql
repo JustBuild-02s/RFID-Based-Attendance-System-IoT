@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS rfid_database;
+USE rfid_database;
+
+CREATE TABLE rfid_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    uid VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    branch VARCHAR(255) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE attendance_data (
+    attendance_id INT AUTO_INCREMENT PRIMARY KEY,
+    uid VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    branch VARCHAR(255) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
